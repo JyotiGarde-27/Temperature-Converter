@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    color: #fff;
+}
+.main-heading{
+    font-size: 3.5rem;
+}
+.logo img{
+    height: 120px;
+}
+
+.features a{
+    text-decoration: none;
+    color: #fff;
+}
+.features p{
+    color: #ffba0b;
+    font-weight: 600;
+}
+.features .content{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.150);
+    background: #f63440;
+    min-height: 200px;
+    overflow: hidden;
+    padding: 1.7rem 1.5rem ;
+    border-radius: 15px;
+}
+.converter-content{
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
+    border: 0.05rem solid #aaa;
+    border-radius: 2px 50px 2px 50px;
+}
+
+.btn-danger{
+    background: #f63440;
+    border-color: #f63440;
+    padding: 0.6rem 1.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.btn-danger:hover{
+    color: #f63440;
+    background: transparent;
+}
+
+input{
+    height: 2.8rem;
+    /* width: 250px; */
+    border-radius: 10px;
+    padding: 0.4rem;
+}
+#footer{
+    background-color: #f63441f3;
+    color: #fff;
+}
+#footer i:hover{
+    color: #ffba0b;
+}

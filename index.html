@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Temperature Converter, HTML, CSS, JavaScript, BOOTSTRAP">
+    <meta name="author" content="Jyoti Garde">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- syle css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- cdn links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="./script.js"></script>
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+    <main class="py-5 bg-dark">
+        <section id="main">
+            <div class="container">
+                <h1 class="main-heading text-center">Temperature Converter</h1>
+            </div>
+            <div class="text-center logo mb-4"><a href="#"><img src="./images/tempLogo.png"
+                        alt="Temperature Converter Logo"></a></div>
+
+            <div class="features">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-6 col-lg-4 mb-4 mx-2">
+                            <a href="#ctoF">
+                                <div class="content text-center">
+                                    <h2>°C to Fahrenheit </h2>
+                                    <p class="fs-4">Converts Temperature from Degree Celsius to Fahrenheit</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4 mb-4 mx-2">
+                            <a href="#ftoC">
+                                <div class="content text-center">
+                                    <h2>Fahrenheit to °C</h2>
+                                    <p class="fs-4">Converts Temperature from Fahrenheit to Degree Celsius</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Degree Celsius to Fahrenheit Converter -->
+        <section id="ctoF">
+            <div class="container text-center my-5">
+                <div class="converter-content">
+                    <h1>°C to Fahrenheit </h1>
+                    <p class="lead fs-4">Enter the temperature to convert to Fahrenheit</p>
+                    <div class="row mt-4">
+                        <div class="col-md-4 mb-4">
+                            <input type="number" id="celciusDeg" placeholder="Degree Celsius">
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <button type="button" class="btn btn-danger text-uppercase"
+                                onclick="changeCelDegToFahrenheit()">Convert</button>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <input type="number" id="fahrenheitDeg" placeholder="Fahrenheit Degree">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fahrenheit to Degree Celsius Converter -->
+        <section id="ftoC">
+            <div class="container text-center my-5">
+                <div class="converter-content">
+                    <h1>Fahrenheit to °C</h1>
+                    <p class="lead fs-4">Enter the temperature to convert to Degree Celcius</p>
+                    <div class="row mt-4">
+                        <div class="col-md-4 mb-4">
+                            <input type="number" id="fahrenheitDegree" placeholder="Fahrenheit Degree">
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <button type="button" class="btn btn-danger text-uppercase"
+                                onclick="changeFahrenheitDegToCel()">Convert</button>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <input type="number" id="celciusDegree" placeholder="Degree Celsius">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="container-fluid py-5" id="footer">
+
+        <div class="row">
+
+            <div class="text-center container col-md-6">
+                <p class="fs-5 my-1">&copy; Copyright 2022 | Designed with <i class="fas fa-heart text-warning"></i> by
+                    Jyoti Garde</p>
+            </div>
+
+            <div class="text-center container col-md-6">
+                <p class="fs-4 my-1">Follow Us</p>
+                <div class="d-inline-block mx-2">
+                    <a href="https://www.linkedin.com/in/jyoti2714/" target="_blank" class="text-light">
+                        <i class="fab fa-linkedin-in fs-4"></i>
+                    </a>
+                </div>
+                <div class="d-inline-block mx-2">
+                    <a href="https://github.com/JyotiGarde-27" target="_blank" class="text-light">
+                        <i class="fab fa-github fs-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
